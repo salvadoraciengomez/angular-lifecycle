@@ -14,3 +14,18 @@
 <button type="button" class="btn btn-danger" (click)="dangerous=!dangerous" [ngClass]="{'btn-danger': dangerous, 'btn-info': !dangerous}">
   Cambiar
 </button>
+
+<br><br>
+
+<h3>Proceso asíncrono</h3>
+<button
+  (click)="ejecutar()"
+  class="btn btn-primary"
+  type="button"
+  name="button">
+  <i
+    class="fa fa-refresh fa-spin"
+    [ngClass]="{ 'fa-save': !loading, 'fa-refresh fa-spin': loading}">
+  </i>
+  Guardar cambios
+</button>
